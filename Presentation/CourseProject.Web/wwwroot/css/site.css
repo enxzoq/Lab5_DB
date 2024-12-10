@@ -1,0 +1,75 @@
+/* sidebar-menu.css */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+}
+main {
+    margin-left: 250px; /* Ширина бокового меню */
+    padding: 20px; /* Дополнительный отступ для удобства */
+    overflow-x: auto; /* Для горизонтальной прокрутки таблицы при необходимости */
+    box-sizing: border-box; /* Учитывает отступы в ширине */
+}
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background: linear-gradient(180deg, #8a2be2, #00bfff, #32cd32);
+    color: white;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 10px;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+    .menu li {
+        margin: 15px 0;
+    }
+
+    .menu a {
+        text-decoration: none;
+        color: white;
+        font-size: 18px;
+        display: block;
+        padding: 10px 15px;
+        border-radius: 5px;
+        transition: background 0.3s, transform 0.2s;
+    }
+
+        .menu a:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateX(10px);
+        }
+/* Стили для футера */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(to right, #6a11cb, #2575fc); /* Приятный градиент от фиолетового к синему */
+    color: #ffffff; /* Белый текст */
+    font-size: 1.2em;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Легкая тень для текста */
+    border-top: 3px solid #4b0082; /* Фиолетовая рамка */
+    box-shadow: 0 -3px 5px rgba(0, 0, 0, 0.2); /* Тень сверху для объема */
+}
+
+/* Глобальный стиль для ссылок */
+a {
+    text-decoration: none; /* Убираем подчеркивание */
+    font-size: 1em;
+    color: #2575fc; /* Приятный синий цвет */
+    padding: 5px 10px;
+    transition: all 0.3s ease; /* Плавные переходы для всех свойств */
+    border-radius: 5px; /* Скругленные углы */
+}
+
+    a:hover {
+        color: #ffffff; /* Белый текст при наведении */
+        background-color: #2575fc; /* Фон при наведении */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Легкая тень при наведении */
+    }
